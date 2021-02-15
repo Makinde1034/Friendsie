@@ -1,0 +1,125 @@
+:root{
+    --background:#41A3FA;
+}
+
+nav{
+    height: 8vh;
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;
+
+}
+
+
+nav ul{
+    display: flex;
+    width: 10%;
+    justify-content: space-between;
+    list-style: none;
+    font-weight: bold;
+    align-content: center;
+}
+
+nav ul li{
+    cursor: pointer;
+}
+
+nav img{
+    height: 30px;
+    cursor: pointer;
+}
+
+
+.box{
+    padding-top: 20px;
+    transition: 0.5s;
+    width: 200px;
+    background: white;
+    top: 5.5vh;
+
+    position: fixed;
+    display: none;
+    border-radius: 5px;
+    box-shadow: rgba(114, 112, 112, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    padding-left: 10px;
+}
+
+.box a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.box li{
+    margin-bottom: 20px;
+    padding-top: 5px;
+}
+
+.box li:hover{
+    background: rgba(161, 158, 158, 0.315);
+}
+
+.imgBox{
+    display: flex;
+}
+
+.number{
+    height: 15px;
+    width: 15px;
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+
+.main:hover .box{
+    display: block;
+    
+}
+
+.burger{
+    display: none;
+}
+
+.line{
+    height: 2px;
+    width: 30px;
+    margin: 2px;
+    background: white;
+}
+
+@media screen and (max-width:1024px){
+
+    nav{
+        padding-left: 20px;
+        padding-right: 20px;
+        position: fixed;
+        width: 100%;
+    }
+
+    nav ul{
+        display: block;
+        width: 30%;
+        
+        
+    }
+
+    .main{
+        display: none;
+    }
+
+    nav img{
+        height: 25px;
+    }
+
+    .burger{
+        display: block;
+    }
+}

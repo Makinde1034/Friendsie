@@ -1,0 +1,129 @@
+*{
+    font-family: 'Benne', serif;
+}
+
+
+.landing{
+    height: 100vh;
+}
+
+.hero{
+    height: 60vh;
+    background: #41A3FA;
+   
+}
+
+
+
+.LandingNav{
+    padding: 0px 50px 0px 50px;
+    height:8vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.LandingNav h1{
+    color: white;
+    
+}
+
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    position: relative;
+    background-color: #41A3FA;
+}
+
+
+
+
+.main img{
+    height: 80%;
+}
+
+.hero2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.hero2 h1{
+    font-size: 40px;
+}
+
+
+.buttonBox{
+    margin-top: 30px;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.buttonBox button{
+    height: 40px;
+    width: 150px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.buttonBox button:nth-child(1){
+    background-image: linear-gradient(90deg,#FBA138,#f8c080a4)
+
+}
+
+.buttonBox button:nth-child(2){
+    background-image: linear-gradient(90deg,#41A3FA,#41a4fa86)
+
+}
+
+@media screen and (max-width:1024px){
+    .buttonBox{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .LandingNav{
+        padding-left: 20px;
+    }
+
+    .buttonBox button{
+        margin-top: 20px;
+    }
+
+    .hero2{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 50px;
+     
+    }
+
+    .hero2 p{
+        text-align: center;
+        margin-top: 20px;
+    }
+        
+    .hero img{
+        height: 50%;
+    }
+
+    
+
+    body,html{
+        overflow-x: hidden;
+    }
+}

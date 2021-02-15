@@ -1,24 +1,36 @@
 import logo from './logo.svg';
 import './App.css';
+import Landing from './Components/Landing.js'
+import Contact from './Components/Contact.js'
+import SignUp from './Components/SignUp.js'
+import {Switch,Route} from 'react-router-dom'
+import UserProfile from './Components/UserProfile'
+import MeetSomeone from './Components/MeetSomeone'
+import Connect from './Components/Connect'
+import ProfileSettings from './Components/ProfileSettings'
+import BurgerContext from './Components/Context/BurgerContext'
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BurgerContext>
+      <div className="App">
+        <Switch>
+          <Route path='/' exact component={Landing} />
+          <Route path='/signup' component={SignUp} />
+          <Route path='/profile' component={UserProfile} />
+          <Route path='/meet' component={MeetSomeone} />
+          <Route path='/connect' component={Connect} />
+          <Route path='/settings' component={ProfileSettings} />
+
+        </Switch>
+      
+
+
+      </div>
+    </BurgerContext>
+   
   );
 }
 
