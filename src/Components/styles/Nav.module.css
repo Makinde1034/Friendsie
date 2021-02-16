@@ -72,6 +72,8 @@ nav img{
 
 .imgBox{
     display: flex;
+    align-items: center;
+    height: 8vh;
 }
 
 .number{
@@ -101,6 +103,8 @@ nav img{
     margin: 2px;
     background: white;
 }
+
+
 
 @media screen and (max-width:1024px){
 
