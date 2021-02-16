@@ -11,9 +11,11 @@ import {BurgerState} from './Context/BurgerContext'
 
 
 
-function UserProfile() {
+function UserProfile(){
     const {slide} = useContext(BurgerState);
     const [Click,setClick] = slide
+
+    
 
     
     return (

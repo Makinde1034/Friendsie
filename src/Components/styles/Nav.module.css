@@ -21,7 +21,9 @@ nav ul{
     justify-content: space-between;
     list-style: none;
     font-weight: bold;
-    align-content: center;
+    
+    height: 8vh;
+    align-items: center;
 }
 
 nav ul li{
@@ -33,6 +35,11 @@ nav img{
     cursor: pointer;
 }
 
+.main{
+    display: flex;
+    align-items: center;
+}
+
 
 .box{
     padding-top: 20px;
@@ -40,7 +47,7 @@ nav img{
     width: 200px;
     background: white;
     top: 5.5vh;
-
+    
     position: fixed;
     display: none;
     border-radius: 5px;
