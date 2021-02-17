@@ -24,7 +24,7 @@ function SignUp() {
                         <label htmlFor="">Username</label>
                         <input type="text"/>
                         <button>Sign Up</button>
-                        <Link><p>Already have an account? Log In</p></Link>
+                        <Link to='/signin'><p>Already have an account? Log In</p></Link>
                     </form>
                 </div>
             </div>

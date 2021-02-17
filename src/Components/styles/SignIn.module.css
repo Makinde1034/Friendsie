@@ -1,0 +1,83 @@
+.half{
+    height: 70vh;
+    background: #41A3FA;
+    transform: skew(0deg,10deg);
+    margin-top: -200px;
+}
+
+/* .SignIn{
+    overflow: none;
+    height: 100vh;
+    
+} */
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+    height: 70vh;
+    transform: skew(0deg,-10deg);
+}
+
+.content img{
+    height: 90%;
+}
+
+.bottom{
+    display: flex;
+    justify-content: center;
+}
+
+.bottom form{
+    width: 30%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom form label{
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.bottom form h3{
+    text-align: center;
+    font-weight: bold;
+}
+
+.bottom form input{
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.bottom form button{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #FBA138;
+    margin-top: 30px;
+}
+
+.bottom form input:focus{
+    padding-left: 20px;
+}
+
+@media screen and (max-width:1024px){
+
+    .content img{
+        height: 70%;
+    }
+    .bottom form{
+        width: 90%;
+    }
+}

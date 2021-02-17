@@ -9,6 +9,7 @@ import MeetSomeone from './Components/MeetSomeone'
 import Connect from './Components/Connect'
 import ProfileSettings from './Components/ProfileSettings'
 import BurgerContext from './Components/Context/BurgerContext'
+import SignIn from './Components/SignIn'
 
 
 
@@ -23,6 +24,7 @@ function App() {
           <Route path='/meet' component={MeetSomeone} />
           <Route path='/connect' component={Connect} />
           <Route path='/settings' component={ProfileSettings} />
+          <Route path='/signin' component={SignIn} />
 
         </Switch>
       
