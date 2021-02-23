@@ -2,6 +2,7 @@ import React from 'react'
 import Styles from './styles/SignIn.module.css' 
 import Pizza from './images/undraw_pizza_sharing_wxop-removebg-preview.png'
 
+
 function SignIn() {
     return (
         <div className={Styles.SignIn}>

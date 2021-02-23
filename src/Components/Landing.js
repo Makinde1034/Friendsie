@@ -9,7 +9,7 @@ import { TweenMax, Power3 } from "gsap";
 function Landing() {
 
     var welcome = useRef(null);
-    var img = useRef(null)
+    var img = useRef(null);
 
 
     useEffect(()=>{
